@@ -84,7 +84,7 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  const response = await fetch('http://localhost:8000', {
+  const response = await fetch('https://codex-uwft.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -115,4 +115,4 @@ form.addEventListener('keyup', (e) => {
   if (e.keyCode === 13) {
     handleSubmit(e);
   }
-});
+});   
